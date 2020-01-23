@@ -1,1 +1,25 @@
-./WS-2019-20/README.org
+#+TITLE: Personal Math Notes
+
+To read notes, view: [[current.html]]
+
+* Who is this for
+
+primarily me, because I would like to have portable and version-controlled math
+notes and proofs in a nearly format-agnostic way (I want to replace LaTeX with a different,
+mroe structured notation that can be easily be converted into Metamath, I will
+possibly just use metamath notation in the end)
+
+* Content breakdown
+
+** Winter Semester 2019-2020 (WS 2019-20)
+modules:
+
+- Linear Algebra Ⅰ
+- Analysis Ⅰ
+- Numerical analysis plus Discrete Mathematics Ⅰ /Algorithmische Mathematik Ⅰ/
+
+* Note
+also check out [[github.com/juvenigi/alma]] for programming exercises in C++ (please
+note that they're not a good example how to code, for that refer to Rosetta Code
+or similar sources). I was also lazy to manage dependencies for my projects,
+and I want to slowly compartmentalize code.
