@@ -1,6 +1,6 @@
 #+TITLE: Personal Math Notes
 
-To read notes, view: [[current.html]]
+To read the notes in your web browser of choice, please view: [[juvenigi.github.io/mathnotes]]
 
 * Who is this for
 
