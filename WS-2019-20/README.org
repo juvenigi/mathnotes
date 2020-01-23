@@ -1,0 +1,82 @@
+#+TITLE:Condensed Math
+#+AUTHOR: Dmytro Soldovnichenko
+#+Date: <2020-01-23 Do>
+#+TODO: LEARN WRITE | DONE
+
+* Condenced Math
+
+** Condenced Math General
+
+*** Elementary Set Theory
+**** Notes on algebraic structures:
+***** Note 1: on extending algebraic structures
+fields and rings can be thought of as extensions of more primitive definitions
+such as groups, half-groups, monoids and so on. This is useful in math, because a lot of times, fields
+are mere "special cases". This also means, there is no definitive way to learn
+this stuff in mathematics, you can mix and match definitions to make your own
+version of definitions that may or may not be easy to learn.
+The bottom-up approach is useful in a sense that you can still name the
+structure you're working with even if your initial (optimistic) assumption was
+incorrect or you're working with minimal information.
+***** Note 2: hierarchy of algebraic structures
+you can form a hierarchy of algebraic structures for learning convenience
+
+|-------+-----------+-------|
+| Magma | Semigroup | Group |
+|-------+-----------+-------|
+
+Ring-to-Field correpsondence "spiritual successor"
+
+|--------------+------------+------------|
+| Ring         | Halbring   | Fastring   |
+|--------------+------------+------------|
+| Schiefkörper | Halbkörper | Fastkörper |
+|--------------+------------+------------|
+
+***** Note 3: "space" means little on its own
+We don't go that much into detail when studying this, but *space* is also a
+frequently-used terminology without much meaning as-is, but by adding an adjective, you get
+some /structure/ (Topology, Metric, Vectors being examples said structures).
+**** English-German disambiguation :TODO:
+most things are literally the same both in English and German. However, there
+are some naming conventions in English, which are /isomorphic/ but not identical to German, that being:
+
+- *Körper* is a *Field*, but *Vector space* *(Vectorraum)*, is not a
+*Vector Field*. (Latter being a *Vektorfeld*, a function that assigns a vector
+over every point in a given /space/).
+
+Translation list
+- *Schiefkörper* is a *Skew field* or *Division ring*
+- *Halbkörper* is a *Semifield*
+- *Fastkörper* is a *Near-ring* /sometimes written as nearring or near ring, there
+  is some serious pun potential./
+**** Space(s)
+space is a set which has some underlying structure, such as a vector, metric, or topology.
+***** LEARN Topological space
+
+***** Metric space
+***** Vector space
+
+**** LEARN Monoid (I only know it exists, and it's not strictly necessary to learn)
+metamath link: http://us.metamath.org/mpegif/df-mgm.html
+**** Halbgruppe
+**** Gruppe
+
+**** Ring
+**** Ringlike structures (abelian Ring and Schiefkörper,)
+
+**** Körper /eng: Field/
+*Axioms:*
+
+Let $K$ be a field /Körper/ then the following statements hold true:
+- *Commutativity:* addition and multiplication is commutative, i.e.
+ - $a + b = b + a \quad \forall a,b \in K$
+- *Distributivity:*
+
+** Condenced Analysis
+*** Sequences
+*** Series
+*** Convergence
+*** Continuity
+*** Differenciability
+***
