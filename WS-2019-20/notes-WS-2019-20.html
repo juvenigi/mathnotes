@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-01-23 Do 12:06 -->
+<!-- 2020-01-23 Do 23:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Condensed Math</title>
@@ -195,6 +194,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -271,45 +276,134 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org476046d">1. Condenced Math</a>
+<li><a href="#org7bd1fc3">1. Quick links</a></li>
+<li><a href="#org94a7583">2. English-German disambiguation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="TODO">TODO</span></span></a></li>
+<li><a href="#orgfae00f8">3. Quick note on capitalization/syntax rules&#xa0;&#xa0;&#xa0;<span class="tag"><span class="TODO">TODO</span></span></a></li>
+<li><a href="#org80a5ed3">4. Condenced Math general (Set theory ⋃ Category theory)</a>
 <ul>
-<li><a href="#orgfe48eee">1.1. Condenced Math General</a>
+<li><a href="#orga78a67e">4.1. Elementary Set Theory</a>
 <ul>
-<li><a href="#orgee2e85b">1.1.1. Elementary Set Theory</a></li>
+<li><a href="#orgf18867e">4.1.1. Notes on algebraic structures:</a></li>
+<li><a href="#org1e5903d">4.1.2. Space(s)</a></li>
+<li><a href="#orgf4505ff">4.1.3. <span class="todo LEARN">LEARN</span> Monoid (I only know it exists, and it&rsquo;s not strictly necessary to learn)</a></li>
+<li><a href="#org628956b">4.1.4. Halbgruppe</a></li>
+<li><a href="#orgf805759">4.1.5. Gruppe</a></li>
+<li><a href="#org4b9afaf">4.1.6. Ring</a></li>
+<li><a href="#org4c33dc5">4.1.7. Ring-like structures (abelian Ring and Schiefkörper,)</a></li>
+<li><a href="#org56567cb">4.1.8. Körper <i>eng: Field</i></a></li>
 </ul>
 </li>
-<li><a href="#orgdbe654a">1.2. Condenced Analysis</a>
+</ul>
+</li>
+<li><a href="#org01921af">5. Condenced Analysis</a>
 <ul>
-<li><a href="#org647b366">1.2.1. Sequences</a></li>
-<li><a href="#org2c1926c">1.2.2. Series</a></li>
-<li><a href="#orgccbd785">1.2.3. Convergence</a></li>
-<li><a href="#org8db400b">1.2.4. Continuity</a></li>
-<li><a href="#org272175e">1.2.5. Differenciability</a></li>
+<li><a href="#orga406c42">5.1. Sequences</a></li>
+<li><a href="#org1f02fee">5.2. Series</a></li>
+<li><a href="#org1504aad">5.3. Convergence</a></li>
+<li><a href="#org68eee19">5.4. Continuity</a></li>
+<li><a href="#org537925a">5.5. Differentiability</a></li>
+<li><a href="#org0e6543f">5.6. Riemann integral</a></li>
+</ul>
+</li>
+<li><a href="#org00416c2">6. Condenced Linear algebra</a>
+<ul>
+<li><a href="#org5aa5601">6.1. Matrices, Properties</a>
+<ul>
+<li><a href="#orgda6bcad">6.1.1. Dimension</a></li>
+<li><a href="#orgffa5a64">6.1.2. Rank</a></li>
+<li><a href="#org6181a86">6.1.3. Span</a></li>
+</ul>
+</li>
+<li><a href="#org1556716">6.2. rng() &lt;- Ring? Rang? ≠ Rank</a></li>
+<li><a href="#org3467f76">6.3. Morphisms (move to Category theory)</a>
+<ul>
+<li><a href="#org7ba9a9a">6.3.1. Endomorphism</a></li>
+<li><a href="#orgf6cf79b">6.3.2. Homomorphism</a></li>
+<li><a href="#org3030f19">6.3.3. Isomorphism</a></li>
+</ul>
+</li>
+<li><a href="#orgc51abca">6.4. Scalar product(s)</a></li>
+<li><a href="#orgfaf7862">6.5. Hermetic-Bilinear-Sesquilinear functions</a></li>
+<li><a href="#orge07e0e4">6.6. Orthogonality</a></li>
+<li><a href="#orgf689fcd">6.7. Gram-Schmidt process</a></li>
+</ul>
+</li>
+<li><a href="#orgf710a78">7. Condenced {Discrete math ⋃ Numerical analysis}</a>
+<ul>
+<li><a href="#orgcc880b8">7.1. Numerical stability</a></li>
 </ul>
 </li>
 </ul>
-</li>
+</div>
+</div>
+<div id="outline-container-org7bd1fc3" class="outline-2">
+<h2 id="org7bd1fc3"><span class="section-number-2">1</span> Quick links</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="#org80a5ed3">Condenced Math general (Set theory ⋃ Category theory)</a></li>
+<li><a href="#org01921af">Condenced Analysis</a></li>
+<li><a href="#org00416c2">Condenced Linear algebra</a></li>
+<li><a href="#orgf710a78">Condenced {Discrete math ⋃ Numerical analysis}</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94a7583" class="outline-2">
+<h2 id="org94a7583"><span class="section-number-2">2</span> English-German disambiguation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="TODO">TODO</span></span></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Most terminologies are literally the same in both English and German, however, there
+are some naming conventions in English which are <i>isomorphic</i> but not identical to German, that being:
+</p>
+
+<ul class="org-ul">
+<li><b>Körper</b> is a <b>Field</b></li>
+<li>&#x2026;but a <b>Vector space</b> <b>(Vectorraum)</b>, is not a <b>Vector field</b>. (Latter being a <b>Vektorfeld</b>, a function that assigns a vector</li>
+</ul>
+<p>
+over every point in a given <i>space</i>).
+</p>
+
+<p>
+Further list translations:
+</p>
+<ul class="org-ul">
+<li><b>Schiefkörper</b> is a <b>Skew field</b> or <b>Division ring</b></li>
+<li><b>Halbkörper</b> is a <b>Semifield</b></li>
+<li><b>Fastkörper</b> is a <b>Near-ring</b> <i>sometimes written as nearring or near ring, there
+is some serious pun potential.</i></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org476046d" class="outline-2">
-<h2 id="org476046d"><span class="section-number-2">1</span> Condenced Math</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgfae00f8" class="outline-2">
+<h2 id="orgfae00f8"><span class="section-number-2">3</span> Quick note on capitalization/syntax rules&#xa0;&#xa0;&#xa0;<span class="tag"><span class="TODO">TODO</span></span></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Start sentences and blocks with a capital letter. Terms such as <b>Sets</b>, <b>Rings</b>,
+<b>Vectors</b> should be capitalized or even emphasised <b>in bold</b>. However, <b>Set
+theory</b> or any multiword terms only need the first word be capitalized. Names
+override the rule as they are always capitalized. This is done to make it look
+similar enough to German syntax, which simplifies my life. But note, I make some
+slips and some words may be mistakenly capitalized — you&rsquo;re free to correct me.
+<i>note: if a topic occurs somewhere else, the best thing to do is to link it to an entry here, if such doesn&rsquo;t exit, create one.</i>
+</p>
 </div>
-<div id="outline-container-orgfe48eee" class="outline-3">
-<h3 id="orgfe48eee"><span class="section-number-3">1.1</span> Condenced Math General</h3>
-<div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orgee2e85b" class="outline-4">
-<h4 id="orgee2e85b"><span class="section-number-4">1.1.1</span> Elementary Set Theory</h4>
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-org80a5ed3" class="outline-2">
+<h2 id="org80a5ed3"><span class="section-number-2">4</span> Condenced Math general (Set theory ⋃ Category theory)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orga78a67e" class="outline-3">
+<h3 id="orga78a67e"><span class="section-number-3">4.1</span> Elementary Set Theory</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgf18867e" class="outline-4">
+<h4 id="orgf18867e"><span class="section-number-4">4.1.1</span> Notes on algebraic structures:</h4>
+<div class="outline-text-4" id="text-4-1-1">
 </div>
 <ol class="org-ol">
-<li><a id="org0e591ad"></a>Notes on algebraic structures:<br />
-<ol class="org-ol">
-<li><a id="orge9f48ed"></a>Note 1: on extending algebraic structures<br />
-<div class="outline-text-6" id="text-1-1-1-1-1">
+<li><a id="org2d7c94c"></a>Note 1: on extending algebraic structures<br />
+<div class="outline-text-5" id="text-4-1-1-1">
 <p>
 fields and rings can be thought of as extensions of more primitive definitions
 such as groups, half-groups, monoids and so on. This is useful in math, because a lot of times, fields
@@ -322,8 +416,8 @@ incorrect or you&rsquo;re working with minimal information.
 </p>
 </div>
 </li>
-<li><a id="org30fcd6d"></a>Note 2: hierarchy of algebraic structures<br />
-<div class="outline-text-6" id="text-1-1-1-1-2">
+<li><a id="orgf7439fd"></a>Note 2: hierarchy of algebraic structures<br />
+<div class="outline-text-5" id="text-4-1-1-2">
 <p>
 you can form a hierarchy of algebraic structures for learning convenience
 </p>
@@ -379,8 +473,8 @@ Ring-to-Field correpsondence &ldquo;spiritual successor&rdquo;
 </div>
 </li>
 
-<li><a id="org1c1df47"></a>Note 3: &ldquo;space&rdquo; means little on its own<br />
-<div class="outline-text-6" id="text-1-1-1-1-3">
+<li><a id="org479954d"></a>Note 3: &ldquo;space&rdquo; means little on its own<br />
+<div class="outline-text-5" id="text-4-1-1-3">
 <p>
 We don&rsquo;t go that much into detail when studying this, but <b>space</b> is also a
 frequently-used terminology without much meaning as-is, but by adding an adjective, you get
@@ -389,62 +483,47 @@ some <i>structure</i> (Topology, Metric, Vectors being examples said structures)
 </div>
 </li>
 </ol>
-</li>
-<li><a id="org015881e"></a>English-German disambiguation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="TODO">TODO</span></span><br />
-<div class="outline-text-5" id="text-1-1-1-2">
-<p>
-most things are literally the same both in English and German. However, there
-are some naming conventions in English, which are <i>isomorphic</i> but not identical to German, that being:
-</p>
-
-<ul class="org-ul">
-<li><b>Körper</b> is a <b>Field</b>, but <b>Vector space</b> <b>(Vectorraum)</b>, is not a</li>
-</ul>
-<p>
-<b>Vector Field</b>. (Latter being a <b>Vektorfeld</b>, a function that assigns a vector
-over every point in a given <i>space</i>).
-</p>
-
-<p>
-Translation list
-</p>
-<ul class="org-ul">
-<li><b>Schiefkörper</b> is a <b>Skew field</b> or <b>Division ring</b></li>
-<li><b>Halbkörper</b> is a <b>Semifield</b></li>
-<li><b>Fastkörper</b> is a <b>Near-ring</b> <i>sometimes written as nearring or near ring, there
-is some serious pun potential.</i></li>
-</ul>
 </div>
-</li>
-<li><a id="orgd8503c2"></a>Space(s)<br />
-<div class="outline-text-5" id="text-1-1-1-3">
+<div id="outline-container-org1e5903d" class="outline-4">
+<h4 id="org1e5903d"><span class="section-number-4">4.1.2</span> Space(s)</h4>
+<div class="outline-text-4" id="text-4-1-2">
 <p>
 space is a set which has some underlying structure, such as a vector, metric, or topology.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org6abc154"></a><span class="todo LEARN">LEARN</span> Topological space<br /></li>
+<li><a id="orgba58ceb"></a><span class="todo LEARN">LEARN</span> Topological space<br /></li>
 
-<li><a id="orgcb6a73d"></a>Metric space<br /></li>
-<li><a id="org1731cce"></a>Vector space<br /></li>
+<li><a id="orga03ed6e"></a>Metric space<br /></li>
+<li><a id="orgaf5ef07"></a>Vector space<br /></li>
 </ol>
-</li>
+</div>
 
-<li><a id="org09529c8"></a><span class="todo LEARN">LEARN</span> Monoid (I only know it exists, and it&rsquo;s not strictly necessary to learn)<br />
-<div class="outline-text-5" id="text-1-1-1-4">
+<div id="outline-container-orgf4505ff" class="outline-4">
+<h4 id="orgf4505ff"><span class="section-number-4">4.1.3</span> <span class="todo LEARN">LEARN</span> Monoid (I only know it exists, and it&rsquo;s not strictly necessary to learn)</h4>
+<div class="outline-text-4" id="text-4-1-3">
 <p>
 metamath link: <a href="http://us.metamath.org/mpegif/df-mgm.html">http://us.metamath.org/mpegif/df-mgm.html</a>
 </p>
 </div>
-</li>
-<li><a id="org1f40e87"></a>Halbgruppe<br /></li>
-<li><a id="org6e92522"></a>Gruppe<br /></li>
+</div>
+<div id="outline-container-org628956b" class="outline-4">
+<h4 id="org628956b"><span class="section-number-4">4.1.4</span> Halbgruppe</h4>
+</div>
+<div id="outline-container-orgf805759" class="outline-4">
+<h4 id="orgf805759"><span class="section-number-4">4.1.5</span> Gruppe</h4>
+</div>
 
-<li><a id="orgf57ea87"></a>Ring<br /></li>
-<li><a id="orgc0c430b"></a>Ringlike structures (abelian Ring and Schiefkörper,)<br /></li>
+<div id="outline-container-org4b9afaf" class="outline-4">
+<h4 id="org4b9afaf"><span class="section-number-4">4.1.6</span> Ring</h4>
+</div>
+<div id="outline-container-org4c33dc5" class="outline-4">
+<h4 id="org4c33dc5"><span class="section-number-4">4.1.7</span> Ring-like structures (abelian Ring and Schiefkörper,)</h4>
+</div>
 
-<li><a id="org6b21376"></a>Körper <i>eng: Field</i><br />
-<div class="outline-text-5" id="text-1-1-1-9">
+<div id="outline-container-org56567cb" class="outline-4">
+<h4 id="org56567cb"><span class="section-number-4">4.1.8</span> Körper <i>eng: Field</i></h4>
+<div class="outline-text-4" id="text-4-1-8">
 <p>
 <b>Axioms:</b>
 </p>
@@ -460,42 +539,107 @@ Let \(K\) be a field <i>Körper</i> then the following statements hold true:
 <li><b>Distributivity:</b></li>
 </ul>
 </div>
-</li>
-</ol>
+</div>
 </div>
 </div>
 
-<div id="outline-container-orgdbe654a" class="outline-3">
-<h3 id="orgdbe654a"><span class="section-number-3">1.2</span> Condenced Analysis</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org01921af" class="outline-2">
+<h2 id="org01921af"><span class="section-number-2">5</span> Condenced Analysis</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org647b366" class="outline-4">
-<h4 id="org647b366"><span class="section-number-4">1.2.1</span> Sequences</h4>
+<div id="outline-container-orga406c42" class="outline-3">
+<h3 id="orga406c42"><span class="section-number-3">5.1</span> Sequences</h3>
 </div>
-<div id="outline-container-org2c1926c" class="outline-4">
-<h4 id="org2c1926c"><span class="section-number-4">1.2.2</span> Series</h4>
+<div id="outline-container-org1f02fee" class="outline-3">
+<h3 id="org1f02fee"><span class="section-number-3">5.2</span> Series</h3>
 </div>
-<div id="outline-container-orgccbd785" class="outline-4">
-<h4 id="orgccbd785"><span class="section-number-4">1.2.3</span> Convergence</h4>
+<div id="outline-container-org1504aad" class="outline-3">
+<h3 id="org1504aad"><span class="section-number-3">5.3</span> Convergence</h3>
 </div>
-<div id="outline-container-org8db400b" class="outline-4">
-<h4 id="org8db400b"><span class="section-number-4">1.2.4</span> Continuity</h4>
+<div id="outline-container-org68eee19" class="outline-3">
+<h3 id="org68eee19"><span class="section-number-3">5.4</span> Continuity</h3>
 </div>
-<div id="outline-container-org272175e" class="outline-4">
-<h4 id="org272175e"><span class="section-number-4">1.2.5</span> Differenciability</h4>
-<div class="outline-text-4" id="text-1-2-5">
+<div id="outline-container-org537925a" class="outline-3">
+<h3 id="org537925a"><span class="section-number-3">5.5</span> Differentiability</h3>
+</div>
+<div id="outline-container-org0e6543f" class="outline-3">
+<h3 id="org0e6543f"><span class="section-number-3">5.6</span> Riemann integral</h3>
+</div>
+</div>
+
+<div id="outline-container-org00416c2" class="outline-2">
+<h2 id="org00416c2"><span class="section-number-2">6</span> Condenced Linear algebra</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org5aa5601" class="outline-3">
+<h3 id="org5aa5601"><span class="section-number-3">6.1</span> Matrices, Properties</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-orgda6bcad" class="outline-4">
+<h4 id="orgda6bcad"><span class="section-number-4">6.1.1</span> Dimension</h4>
+</div>
+<div id="outline-container-orgffa5a64" class="outline-4">
+<h4 id="orgffa5a64"><span class="section-number-4">6.1.2</span> Rank</h4>
+</div>
+<div id="outline-container-org6181a86" class="outline-4">
+<h4 id="org6181a86"><span class="section-number-4">6.1.3</span> Span</h4>
+</div>
+</div>
+<div id="outline-container-org1556716" class="outline-3">
+<h3 id="org1556716"><span class="section-number-3">6.2</span> rng() &lt;- Ring? Rang? ≠ Rank</h3>
+</div>
+<div id="outline-container-org3467f76" class="outline-3">
+<h3 id="org3467f76"><span class="section-number-3">6.3</span> Morphisms (move to Category theory)</h3>
+<div class="outline-text-3" id="text-6-3">
+</div>
+<div id="outline-container-org7ba9a9a" class="outline-4">
+<h4 id="org7ba9a9a"><span class="section-number-4">6.3.1</span> Endomorphism</h4>
+<div class="outline-text-4" id="text-6-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6cff633"></a>Automorphism<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-orgf6cf79b" class="outline-4">
+<h4 id="orgf6cf79b"><span class="section-number-4">6.3.2</span> Homomorphism</h4>
+</div>
+<div id="outline-container-org3030f19" class="outline-4">
+<h4 id="org3030f19"><span class="section-number-4">6.3.3</span> Isomorphism</h4>
+</div>
+</div>
+<div id="outline-container-orgc51abca" class="outline-3">
+<h3 id="orgc51abca"><span class="section-number-3">6.4</span> Scalar product(s)</h3>
+</div>
+<div id="outline-container-orgfaf7862" class="outline-3">
+<h3 id="orgfaf7862"><span class="section-number-3">6.5</span> Hermetic-Bilinear-Sesquilinear functions</h3>
+</div>
+<div id="outline-container-orge07e0e4" class="outline-3">
+<h3 id="orge07e0e4"><span class="section-number-3">6.6</span> Orthogonality</h3>
+</div>
+
+<div id="outline-container-orgf689fcd" class="outline-3">
+<h3 id="orgf689fcd"><span class="section-number-3">6.7</span> Gram-Schmidt process</h3>
+<div class="outline-text-3" id="text-6-7">
 <p>
-<b>*</b>
+∫{}&lt;&gt;[]`´() <i>from:</i> <i>to:</i> <i>of</i>
 </p>
 </div>
 </div>
+</div>
+<div id="outline-container-orgf710a78" class="outline-2">
+<h2 id="orgf710a78"><span class="section-number-2">7</span> Condenced {Discrete math ⋃ Numerical analysis}</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgcc880b8" class="outline-3">
+<h3 id="orgcc880b8"><span class="section-number-3">7.1</span> Numerical stability</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2020-01-23 Do 00:00</p>
 <p class="author">Author: Dmytro Soldovnichenko</p>
-<p class="date">Created: 2020-01-23 Do 12:06</p>
+<p class="date">Created: 2020-01-23 Do 23:52</p>
 </div>
 </body>
 </html>
