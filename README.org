@@ -1,6 +1,6 @@
 #+TITLE: Personal Math Notes
 
-To read the notes in your web browser of choice, please view: [[juvenigi.github.io/mathnotes]]
+To read the notes in your web browser of choice, please view: [[https://juvenigi.github.io/mathnotes]]
 
 * Who is this for
 
@@ -16,10 +16,10 @@ modules:
 
 - Linear Algebra Ⅰ
 - Analysis Ⅰ
-- Numerical analysis plus Discrete Mathematics Ⅰ /Algorithmische Mathematik Ⅰ/
+- Numerical Analysis plus Discrete Mathematics Ⅰ /(Algorithmische Mathematik Ⅰ)/
 
 * Note
-also check out [[github.com/juvenigi/alma]] for programming exercises in C++ (please
+also check out [[http://github.com/juvenigi/alma]] for programming exercises in C++ (please
 note that they're not a good example how to code, for that refer to Rosetta Code
 or similar sources). I was also lazy to manage dependencies for my projects,
 and I want to slowly compartmentalize code.
