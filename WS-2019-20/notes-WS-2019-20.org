@@ -61,6 +61,8 @@ Ring-to-Field correpsondence "spiritual successor"
 We don't go that much into detail when studying this, but *space* is also a
 frequently-used terminology without much meaning as-is, but by adding an adjective, you get
 some /structure/ (Topology, Metric, Vectors being examples said structures).
+**** Note 4: a lot of writing is put on hold since this Wiki page exists
+https://en.wikipedia.org/wiki/Outline_of_algebraic_structures
 *** Space(s)
 space is a set which has some underlying structure, such as a vector, metric, or topology.
 **** LEARN Topological space
@@ -77,13 +79,42 @@ metamath link: http://us.metamath.org/mpegif/df-mgm.html
 *** Ring-like structures (abelian Ring and Schiefkörper,)
 
 *** Körper /eng: Field/
+**** Definition
 *Axioms:*
 
 Let $K$ be a field /Körper/ then the following statements hold true:
 - *Commutativity:* addition and multiplication is commutative, i.e.
- - $a + b = b + a \quad \forall a,b \in K$
+  - $a + b = b + a$
 - *Distributivity:*
 
+**** Common Field properties
+/a Field is, or can be:/
+- *Ordered* /(geordnet)/: \\
+  A Set $\mathbb{K}$ is ordered if:
+  - $(i) \quad a \in \mathbb{K}^{+} \lor a = 0 \lor -a \in \mathbb{K}^{+}$
+  - $(ii) \quad a,b \in \mathbb{K}^{+} \, \Rightarrow \, a + b \in
+    \mathbb{K}^{+} \, \land \; ab \in \mathbb{K}^{+}$
+  /note: sometimes it's useful to remember, that/ $a < b \, \Rightarrow \, b - a \in \mathbb{K}^{+}$
+- *Complete* /(ordnungs*vollständig)/: \\
+  An ordered Set $\mathbb{K}$ is complete if: \\
+  $\exists A,B \in \mathbb{K} \quad A,B \ne \emptyset \quad \forall a,b \in \mathbb{K} : a \geq b \quad \forall a \in A
+   \quad \forall b \in B \quad \Rightarrow \quad \exists x \in \mathbb{K} : a \leq x \leq b
+   \quad \forall a \in A \quad \forall b \in B$
+- *Inductive* /induktiv/: \\
+  $M\subset \mathbb{K}$ is inductive if:
+  - $(i) \quad 0 \in M$
+  - $(ii) \quad \forall a \in M : \, a+1 \in M$
+**** Zahlmenge /= Sets of numbers/
+- $M_{ind} := \{ x\subseteq \mathbb{R}| \, x \: inductive \: Set \: of \: X \}$
+- \[\mathbb{N} := \bigcap_{X \in M_{ind}} X\]
+  this definition implies: $0 \in \mathbb{N}$, but different books provide different
+  definitions. \\
+  shorthand for $\mathbb{N} \backslash \{0\}$ is $\mathbb{N}^{*}$, it's safer to
+  always define itt beforehand in each exam, in order to avoid ambiguity.
+- another interesting property I figured out after asking the professor about
+  it, but be careful if it's not actually true:
+  \[O := \{x \subset R | x \: is \: ordered \} \\
+  \mathbb{Q} = \bigcap_{X \in O} X\]
 * Condenced Analysis
 ** Sequences
 ** Series
