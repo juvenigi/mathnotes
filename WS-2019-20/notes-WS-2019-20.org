@@ -31,6 +31,7 @@ similar enough to German syntax, which simplifies my life. But note, I make some
 slips and some words may be mistakenly capitalized — you're free to correct me.
 /note: if a topic occurs somewhere else, the best thing to do is to link it to an entry here, if such doesn't exit, create one./
 * Condenced Math general (Set theory ⋃ Category theory)
+
 ** Elementary Set Theory
 *** Notes on algebraic structures:
 **** Note 1: on extending algebraic structures
@@ -115,6 +116,39 @@ Let $K$ be a field /Körper/ then the following statements hold true:
   it, but be careful if it's not actually true:
   \[O := \{x \subset R | x \: is \: ordered \} \\
   \mathbb{Q} = \bigcap_{X \in O} X\]
+** Elementary Set logic
+
+*** Disjoint union
+
+/nifty notation/
+Let $A,B$ be Sets. "$\sqcup$" denotes that a union is disjoint (components share
+no common elements). It does not "make" sets disjoint, so you might need to
+prove they are disjoint first.
+
+$A \sqcup B$ iff $A \cap B = \emptyset$
+
+*** Complement
+/Since mathematicians are often pretty lazy, it's not uncommon to stumble upon some abbreviations. I consider "x is a complement of A" to be such shorthand for
+an otherwise clumsy notation/.
+
+Let $U,A$ be Sets such that $A \subset U$. Now, the complement of $A$ is defined as:
+
+$A^{C}=\{x \in U | x \notin U \}$
+
+or more generally,
+
+$\alpha^{C}\subset U =\{x \in U | x \notin \alpha\}$.
+
+the important takeaway is that
+
+$U = A \sqcup A^{C}$ which can be also written as: $U = (U \cup A) \sqcup (U \backslash
+A)$ \\
+/the latter represents "$U$ without $A$" or "complement of $A$" as we have already
+discussed/. And since Any subset of $U$ and its complement are disjoint which
+is trivial to prove: $A\cap A^{C}=\emptyset$,
+Hence the complement of a complement is itself:
+
+$(A^{C})^{C} = A$ ($A$ is simply $U \backslash A^{C}$). Kinda neat, huh?
 * Condenced Analysis
 ** Sequences
 ** Series
@@ -124,6 +158,31 @@ Let $K$ be a field /Körper/ then the following statements hold true:
 ** Riemann integral
 
 * Condenced Linear algebra
+
+** Introduction
+Linear Algebra is an interesting subject that broadens your horizon if you first
+studied analyisis. One possible way to go around studying it is through the lens
+of Category theory -- the alternative view to look at mathematics as a whole
+(the "standard view" being Set theory).
+
+one of the most important concepts to understand are:
+- Linear (in)dependance
+- Linear equation
+- Linear system
+- Relations between Matrices and Linear systems.
+
+as long as you /understand/ these things, the rest of Linear Algebra should be
+easier to grasp (hopefully).
+
+** Tiny bit of combinatorics
+this is useful for understanding Leibniz's formula for calculating the
+Determinant.
+there are transpositions and permutations.
+
+** Gauss-Jordan algorithm
+this is something you'll be doing a lot, so get used to it.
+
+
 ** Matrices, Properties
 *** Dimension
 *** Rank
