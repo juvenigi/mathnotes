@@ -30,6 +30,10 @@ override the rule as they are always capitalized. This is done to make it look
 similar enough to German syntax, which simplifies my life. But note, I make some
 slips and some words may be mistakenly capitalized — you're free to correct me.
 /note: if a topic occurs somewhere else, the best thing to do is to link it to an entry here, if such doesn't exit, create one./
+* Transferrable math conventions (extension of syntax rules)
+- I use square cup =\sqcup= to denote 'disjoint unions'.
+- $\mathbb{K}$ stands for "either $\mathbb{R}$ or $\mathbb{C}$". It's a "macro",
+  an ad-hoc substitution designed to shorten some definitons or proofs.
 * Condenced Math general (Set theory ⋃ Category theory)
 
 ** Elementary Set Theory
@@ -110,24 +114,28 @@ Let $K$ be a field /Körper/ then the following statements hold true:
 - \[\mathbb{N} := \bigcap_{X \in M_{ind}} X\]
   this definition implies: $0 \in \mathbb{N}$, but different books provide different
   definitions. \\
-  shorthand for $\mathbb{N} \backslash \{0\}$ is $\mathbb{N}^{*}$, it's safer to
+  shorthand for $\mathbb{N} \setminus \{0\}$ is $\mathbb{N}^{*}$, it's safer to
   always define itt beforehand in each exam, in order to avoid ambiguity.
 - another interesting property I figured out after asking the professor about
   it, but be careful if it's not actually true:
   \[O := \{x \subset R | x \: is \: ordered \} \\
   \mathbb{Q} = \bigcap_{X \in O} X\]
-** Elementary Set logic
+*** Elementary Set logic
 
-*** Disjoint union
+*** * "$\sqcup$" Disjoint union, "$\veebar$" Disjoint or
 
 /nifty notation/
 Let $A,B$ be Sets. "$\sqcup$" denotes that a union is disjoint (components share
 no common elements). It does not "make" sets disjoint, so you might need to
 prove they are disjoint first.
 
-$A \sqcup B$ iff $A \cap B = \emptyset$
+\[A \cap B = \emptyset \Rightarrow A \cup B \Leftrightarrow A \sqcup B\]
 
-*** Complement
+/similarly,/
+
+\[ \forall A,B \subset U,\; A\not = B,\; A \cap B = \emptyset \Rightarrow \bigcup_{A \subset U} A \Leftrightarrow
+\bigsqcup_{A \subset U} A \]
+**** Complement
 /Since mathematicians are often pretty lazy, it's not uncommon to stumble upon some abbreviations. I consider "x is a complement of A" to be such shorthand for
 an otherwise clumsy notation/.
 
@@ -137,18 +145,38 @@ $A^{C}=\{x \in U | x \notin U \}$
 
 or more generally,
 
-$\alpha^{C}\subset U =\{x \in U | x \notin \alpha\}$.
+$U \supset \alpha^{C} =\{x \in U | x \notin \alpha\}$.
 
 the important takeaway is that
 
-$U = A \sqcup A^{C}$ which can be also written as: $U = (U \cup A) \sqcup (U \backslash
+$U = A \sqcup A^{C}$ which can be also written as: $U = (U \cap A) \sqcup (U \setminus
 A)$ \\
 /the latter represents "$U$ without $A$" or "complement of $A$" as we have already
-discussed/. And since Any subset of $U$ and its complement are disjoint which
+discussed/. And since any subset of $U$ and its complement are disjoint which
 is trivial to prove: $A\cap A^{C}=\emptyset$,
-Hence the complement of a complement is itself:
+hence the complement of a complement is itself:
 
-$(A^{C})^{C} = A$ ($A$ is simply $U \backslash A^{C}$). Kinda neat, huh?
+$(A^{C})^{C} = A$ (/note:/ $A$ is simply $U \setminus A^{C}$). Kinda neat, huh?
+*** Relations
+https://en.wikipedia.org/wiki/Binary_relation
+**** Equivalence relation
+https://en.wikipedia.org/wiki/Equivalence_relation
+
+Let $\sim \subset (\mathbb{R}, \mathbb{R})$, /alternatvely: $\sim \subset
+\mathbb{R}^{2}$, (all we need is an ordered pair)/  \\
+be a Binary relation. Such Relation is an
+Equivalence relation if it satisfies: \\
+$\forall a,b,c \in \mathbb{R}$
+- Reflexive property: $a \sim a$
+- Symmetry: $a\sim b \Rightarrow b\sim a$
+- Transitive property: $a\sim b\sim c \Rightarrow a\sim c$
+
+
+Related to Equivalence relation:
+
+- Equivalence class: $[a] := \{x \in X | a \sim x\}$
+- Quotient set: $X / \sim := \{[x]|x \in X\}$
+
 * Condenced Analysis
 ** Sequences
 ** Series
@@ -160,6 +188,8 @@ $(A^{C})^{C} = A$ ($A$ is simply $U \backslash A^{C}$). Kinda neat, huh?
 * Condenced Linear algebra
 
 ** Introduction
+Before reading anything, just watch:
+https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab \\
 Linear Algebra is an interesting subject that broadens your horizon if you first
 studied analyisis. One possible way to go around studying it is through the lens
 of Category theory -- the alternative view to look at mathematics as a whole
@@ -171,7 +201,7 @@ one of the most important concepts to understand are:
 - Linear system
 - Relations between Matrices and Linear systems.
 
-as long as you /understand/ these things, the rest of Linear Algebra should be
+as long as you /understand/ these things, the rest of Linear algebra should be
 easier to grasp (hopefully).
 
 ** Tiny bit of combinatorics
@@ -183,10 +213,43 @@ there are transpositions and permutations.
 this is something you'll be doing a lot, so get used to it.
 
 
-** Matrices, Properties
+** Intro to Matrices
+*** Definition
+$M(...)$ is a Set of matrices, explained below \\
+- a Real-valued, $a \times b$ Matrix $A$ will be denoted as $A \in M(a \times b,
+  \mathbb{R})$
+- if I'm lazy, I'll just leave dots to assume any /sound/ (sensible) definition
+  of a matrix.
+- a (row) /vector/ $b$, often written as $\vec{b}$ is defined as $b \in M(1 \times n,
+  \mathbb{K})$ column vectors are row vectors when /transposed/.
+*** Matrix operators :TODO:
+- you can add matrices together, or decompose a matrix into a sum, make sure the
+dimensions are right: $A+B = C \implies B + A = C \quad A,B,C \in M(...)$
+- you can also multiply matrices (important: *read left to right*), but not all Matrices commute: $C = AB
+  \not\Rightarrow BA = C \quad A,B,C \in M(...)$
+- you can multiply a vector by a matrix (since a vector is pretty much a Matrix
+  in a mathematical sense.): $Ax = b$ is a standard way to write
+  down a  System of linear equations for a known b and A, and an unknown vector
+  b
+
+  /(sometimes written down as $A \vec{x} = \vec{b}$ to distinguish scalars from
+  vectors./
+- you can transpose matrices, flipping their size values. $b = a^{T}, \; a \in
+  M(1 \times  n, \mathbb{K}) \Rightarrow b \in M(n \times 1, \mathbb{K})$
+- you can multiply a matrix by a scalar, but that's just vanilla basic stuff.
 *** Dimension
 *** Rank
 *** Span
+
+** Linear transformation
+*** Definition
+- just watch
+  https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+- I guess this applies to all Linear algebra, but alas.
+- note: any map can be viewed through the lense of category theory as a
+  Morphism, specifically a Homomorphism.
+
+** Matrix ⇔ Linear mapping
 ** rng() <- Ring? Rang? ≠ Rank
 ** Morphisms (move to Category theory)
 
