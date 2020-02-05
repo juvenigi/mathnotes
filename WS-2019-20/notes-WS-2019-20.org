@@ -96,7 +96,7 @@ Let $K$ be a field /Körper/ then the following statements hold true:
 /a Field is, or can be:/
 - *Ordered* /(geordnet)/: \\
   A Set $\mathbb{K}$ is ordered if:
-  - $(i) \quad a \in \mathbb{K}^{+} \lor a = 0 \lor -a \in \mathbb{K}^{+}$
+  - $(i) \quad a \in \mathbb{K}^{+} \veebar a = 0 \veebar -a \in \mathbb{K}^{+}$
   - $(ii) \quad a,b \in \mathbb{K}^{+} \, \Rightarrow \, a + b \in
     \mathbb{K}^{+} \, \land \; ab \in \mathbb{K}^{+}$
   /note: sometimes it's useful to remember, that/ $a < b \, \Rightarrow \, b - a \in \mathbb{K}^{+}$
@@ -131,17 +131,16 @@ prove they are disjoint first.
 
 \[A \cap B = \emptyset \Rightarrow A \cup B \Leftrightarrow A \sqcup B\]
 
-/similarly,/
+/similarly, (kinda sloppy notation)/
 
-\[ \forall A,B \subset U,\; A\not = B,\; A \cap B = \emptyset \Rightarrow \bigcup_{A \subset U} A \Leftrightarrow
-\bigsqcup_{A \subset U} A \]
+\[ \bigsqcup_{A \subset U} A\; \Rightarrow \; \forall A_{i}, A_{j} \; \in \; \bigsqcup_{A_{i} \subset U} A_{i}:\, i\not = j \quad A_{i} \cap A_{j} = \emptyset \]
 **** Complement
 /Since mathematicians are often pretty lazy, it's not uncommon to stumble upon some abbreviations. I consider "x is a complement of A" to be such shorthand for
 an otherwise clumsy notation/.
 
 Let $U,A$ be Sets such that $A \subset U$. Now, the complement of $A$ is defined as:
 
-$A^{C}=\{x \in U | x \notin U \}$
+$A^{C}=\{x \in U | x \notin A \}$
 
 or more generally,
 
